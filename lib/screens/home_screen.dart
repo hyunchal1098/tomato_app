@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:tomato_app/widget/expandablefab.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -108,6 +109,25 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Container(
             color: Colors.accents[15],
+          ),
+        ],
+      ),
+      floatingActionButton: ExpandableFab(
+        distance: 90,
+        children: [
+          MaterialButton(
+            onPressed: () {},
+            shape: CircleBorder(),
+            height: 40,
+            color: Theme.of(context).colorScheme.primary,
+            child: Icon(Icons.add),
+          ),
+          MaterialButton(
+            onPressed: () {},
+            shape: CircleBorder(),
+            height: 40,
+            color: Theme.of(context).colorScheme.primary,
+            child: Icon(Icons.add),
           ),
         ],
       ),

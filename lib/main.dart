@@ -85,6 +85,7 @@ class CitRusApp extends StatelessWidget {
             /// 앱바테마
             appBarTheme: AppBarTheme(
               backgroundColor: Colors.white,
+              foregroundColor: Colors.black87,
               titleTextStyle: TextStyle(
                 color: Colors.black87,
                 fontSize: 18,
